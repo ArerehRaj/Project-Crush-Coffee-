@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORDER ONLINE</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="info.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="info.css">
+</head>
+<body class="body">
+<div class="container" id="blur">
+    <!--NAVBAR START-->
+    <div class="container">
+        <div class="content">
+            <img src="2.jpg" alt="logo" id="logo">
+            <ul>
+            <BR>
+                <li><a href="../about us/about.html" class="one">ABOUT US</a></li>
+                <li><a href="../menu/menu1.html" class="one">MENUS</a></li>
+                <li><a href="../order/order1.html" class="one">ORDER ONLINE</a></li>
+                <li><a href="../reviews/reviews.html" class="one">REVIEWS</a></li>
+                <li><a href="../contact/crushcoffeecontact.html"class="one">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--NAVBAR END-->
+
+    <br><br><br>
+
+    <!--INFOHEAD START-->
+    <div class="container">
+        <div id="infohead">PLEASE FILL IN YOUR DETAILS TO PROCEED</div>
+    </div>
+    <!--INFOHEAD END-->
+
+    <br><br>
+
+    <!--INFO BODY START-->
+    
+        <div class="container">
+        
+        <!--NAME INFO STARTS-->
+        <div class="row">
+            <div class="col-sm col-md-12 col-lg-12"><center><input type="text" name="firstName" id="fName" placeholder="FirstName" required></center></div> <br>
+            
+            <br> 
+            <div class="col-sm col-md-12 col-lg-12"><center> <input type="text" name="lastName" id="lName" placeholder="LastName" required> </center></div>
+            <br> <br>
+
+            <div class="col-sm col-md-12 col-lg-12"><center> <input type="email" name="mail" id="emailID" placeholder="Email" required> </center></div> <br> <br>
+
+            <div class="col-sm col-md-12 col-lg-12"><center> <input type="tel" name="Phnum" id="phone" placeholder="Phone Number" required> </center></div>
+            
+        </div>
+        <!--NAME INFO ENDS-->
+
+        <br>
+
+        <!--ADDRESS INFO STARTS-->
+        <div class="row">
+            <div class="col-sm col-md-12 col-lg-12"><center><textarea name="Address" id="address" cols="9" rows="3" placeholder="Address" required></textarea></center></div>
+        </div>
+        <!--ADDRESS INFO ENDS-->
+
+        </div>
+
+        <br>
+        <!--MOP STARTS-->
+        <div class="mop">MODE OF PAYMENT</div>
+
+        <br>
+        
+            <div class="row">
+                <div class="col-sm col-md-12 col-lg-12">
+                    <center>
+                        <input type="radio" id="COD" name="MOP" value="COD" required>
+                        <label for="COD" class="cod">COD</label>
+                    </center>
+                </div>
+
+                <div class="col-sm col-md-12 col-lg-12">
+                    <center>
+                        <input type="radio" id="DEBIT" name="MOP" value="Debit Card" required>
+                        <label for="DEBIT" class="debit">Debit Card</label>
+                    </center>
+                </div>
+
+                <div class="col-sm col-md-12 col-lg-12">
+                    <center>
+                        <input type="radio" id="CREDIT" name="MOP" value="Credit Card" required>
+                        <label for="CREDIT" class="credit">Credit Card</label>
+                    </center>
+                </div>
+
+            </div>    
+       
+        <!--MOP ENDS-->
+        
+
+        <br>
+
+        <!--SUBMIT BUTTON STARTS-->
+        <div class="container">
+            <div class="flexcon">
+                
+                <button onclick="return toggle()" id="submitBtn" type="submit" data-toggle="tooltip" title="Double Click!">SUBMIT</button>
+            </div>
+        </div>
+        
+        <!--SUBMIT BUTTON ENDS-->
+
+        <br> <br>
+        <div class="last"> <center>Once you wake up and smell the coffee ☕️, it’s hard to go back to sleep 💤.</center></div>
+       
+        <br> <br>
+
+</div>
+
+        <!--DETAILS STARTS-->
+        <div class="container" id="popup">
+            <div class="row">
+                <div class="col-sm col-md-12 col-lg-12 text-center" id="infohead">DETAILS</div>
+            </div>
+
+            <br>
+            
+            <div class="row text-center" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>
+                Name : <div class="col-sm col-md-5 col-lg-5 text-left" id="fullName"></div>
+            </div>
+
+            <div class="row text-center" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>
+                Phone Number :<div class="col-sm col-md-4 col-lg-4 text-left" id="phn"></div>
+            </div>
+
+            <div class="row text-center" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>
+                Email Id :<div class="col-sm col-md-4 col-lg-4 text-left" id="EMAIL"></div>
+            </div>
+
+            <div class="row text-center" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>
+                Mode Of Payment :<div class="col-sm col-md-4 col-lg-4 text-left" id="pay"></div>
+            </div>
+
+            <div class="row text-center" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>
+                Address : <div class="col-sm col-md-5 col-lg-5 text-left" id="add"></div>
+            </div>
+
+            <br>
+
+            <div class="del"><center>YOUR ORDER ☕☕ WILL BE DELIVERED 🚚 🚚 IN 45 Mins.</center></div>
+            <br>
+            <div class="del"><center>THANK YOU FOR SHOPPING WITH CRUSH COFFEE.</center></div>
+            <br> 
+            
+
+            <div class="flexcon">
+                <button onclick="toggle()"  data-toggle="tooltip" title="Double Click!">CLOSE</button>
+            </div>
+        </div>
+
+        <br> 
+            <!--<div class="row" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>  NAME : &nbsp; <div id="fullName"></div> <div class="col-sm col-md-4 col-lg-4"></div>
+            </div>
+
+            <div class="row" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>  ADDRESS : &nbsp; <div id="add"></div> <div class="col-sm col-md-4 col-lg-4"></div>
+            </div>
+
+            <div class="row" id="details">
+                <div class="col-sm col-md-4 col-lg-4"></div>  MODE OF PAYMENT : &nbsp; <div id="pay"></div> <div class="col-sm col-md-4 col-lg-4"></div>
+            </div>
+
+            <br>
+
+            -->
+        
+                                               <!--DETAILS ENDS-->
+        
+        <!--INFO BODY ENDS-->
+    
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</body>
+</html>

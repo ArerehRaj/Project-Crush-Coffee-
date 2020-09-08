@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONTACT US</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="crushcoffeecontact.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="crushcoffeecontact.css">
+</head>
+<body class="body">
+<div class="container" id="blur">    
+    <div class="conc">
+        <div class="wrapper container">
+            <div class="nav">
+                <img src="2.jpg" alt="logo" id="logo">
+                <ul>
+                <BR>
+                    <li><a href="../about us/about.html" class="one">ABOUT US</a></li>
+                    <li><a href="../menu/menu1.html" class="one">MENUS</a></li>
+                    <li><a href="../order/order1.html" class="one">ORDER ONLINE</a></li>
+                    <li><a href="../reviews/reviews.html" class="one">REVIEWS</a></li>
+                    <li><a href="../contact/crushcoffeecontact.html"class="one">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <div class="loc"> 
+    <div class="container head">
+        CONTACT
+    </div>
+
+    <div class="container input">
+        Planning a Special event ? Write us here...
+    </div>
+    <br>
+
+    <div class="container">
+        
+            <center> <input type="text" name="Name" id="name" placeholder="Name"> </center> <br>
+            <center><input type="email" name="Email" id="email" placeholder="Email"></center> <br>
+            <center><input type="tel" name="Number" id="number" placeholder="Number"></center> <br>
+            <center><textarea name="message" id="message" cols="21" rows="5" placeholder="Type your message here..."></textarea></center> <br>
+            <center> <button class="sbtn" onclick="toggle()">SUBMIT</button></center> 
+        
+    </div>
+  </div> 
+</div>
+
+<div class="container" id="popup">
+    <div class="row">
+        <div class="col-sm col-md-12 col-lg-12 text-center" id="infohead">DETAILS</div>
+    </div>
+
+    <br>
+
+    <div class="row text-center" id="details">
+        <div class="col-sm col-md-3 col-lg-3"></div>
+        Name : <div class="col-sm col-md-5 col-lg-5 text-left" id="fullName"></div>
+    </div>
+
+    <div class="row text-center" id="details">
+        <div class="col-sm col-md-3 col-lg-3"></div>
+        Phone Number :<div class="col-sm col-md-4 col-lg-4 text-left" id="phn"></div>
+    </div>
+
+    <div class="row text-center" id="details">
+        <div class="col-sm col-md-3 col-lg-3"></div>
+        Email Id :<div class="col-sm col-md-4 col-lg-4 text-left" id="EMAIL"></div>
+    </div>
+
+    <div class="row text-center" id="details">
+        <div class="col-sm col-md-3 col-lg-3"></div>
+        message :<div class="col-sm col-md-4 col-lg-4 text-left" id="mes"></div>
+    </div>
+
+    <br>
+    <center> <button onclick="toggle()" id="btn1">CLOSE</button> </center>
+</div>
+
+    <br>
+<div class="container" id="blur1">
+    <div class="container">
+        <div class="head2">MAKE A RESERVATION</div>
+        
+            <div> <input type="date" name="date" id="date"></div> <br><br>
+            <div><input type="time" name="time" id="time"></div> <br><br>
+            <div> 
+                <select name="size" id="size" >
+                    <option value="1 person">1 Person</option>
+                    <option value="2 persons">2 Persons</option>
+                    <option value="3 persons">3 Persons</option>
+                    <option value="4 persons">4 Persons</option>
+                    <option value="5 persons">5 Persons</option>
+                    <option value="6 persons">6 Persons</option>
+                </select>
+            </div> <br><br>
+            <div><button  id="btn" onclick="toggle1()">BOOK</button></div>
+    
+    </div>
+</div>    
+    <br>
+<div class="container" id="popup1">
+    <div class="row">
+        <div class="col-sm col-md-12 col-lg-12 text-center" id="infohead">RESERVATION DETAILS</div>
+    </div>
+
+    <div class="row text-center" id="details">
+        <div class="col-sm col-md-4 col-lg-4"></div>
+        Date : <div class="col-sm col-md-5 col-lg-5 text-left" id="DATE"></div>
+    </div>
+
+    <div class="row text-center" id="details">
+        <div class="col-sm col-md-4 col-lg-4"></div>
+        Time : <div class="col-sm col-md-5 col-lg-5 text-left" id="TIME"></div>
+    </div>
+
+    <div class="row text-center" id="details">
+        <div class="col-sm col-md-4 col-lg-4"></div>
+        Size : <div class="col-sm col-md-5 col-lg-5 text-left" id="SIZE"></div>
+    </div>
+
+   
+
+    <center><button  id="btn1" onclick="toggle1()">CLOSE</button> </center>
+
+
+    
+
+</div>    
+
+    <div class="container head">
+        LOCATION
+    </div>
+
+    <div id="map">
+
+    </div>
+   
+
+    <script>
+        function initMap() {
+            var location = {lat: 19.038719 , lng: 72.923668 };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4, 
+                center: location
+            });
+        }
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=localContext&
+    v=beta&key=AIzaSyABOke5SSES-PcoTVrZS8xA7mgkbgBuXuQ&callback=initMap" type="text/javascript"></script>
+
+    <br>
+    <div class="container">
+    
+        <div class="details" >
+            ADDRESS <br> 
+        </div>
+        <div class="text">
+                <p> Girivan Pristino, 57, Corner of 19th Road, &, DK Sandu St, Chembur, Mumbai, Maharashtra 400071</p>
+        </div>
+        <br>
+        <div class="details">
+            HOURS <br>
+        </div>
+        <div class="text">
+            Monday - Friday : 9:00 AM to 9:00 PM <br>
+            Saturday - Sunday : 10:00 AM to 10:00 PM
+        </div>
+        <br>
+        <div class="details">
+                CONTACT <br>
+        </div>
+        <div class="text">
+               Tel-Number : 1234-5678-90 <br>
+               Email : crushcoffee@synergy.com
+        </div>
+        <br>
+        <div class="details">
+                FOLLOW US ON <br>
+        </div>
+        <div class="text">
+                <a href="#" class="fa fa-facebook"></a> 
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a> 
+                <a href="#" class="fa fa-pinterest"></a> <br> <br>
+        </div>
+    
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>

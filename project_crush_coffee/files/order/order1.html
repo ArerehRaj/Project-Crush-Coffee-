@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORDER ONLINE</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="order1.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="order1.css">
+</head>
+<body>
+
+    <!--NAVBAR START-->
+    
+    <div class="container">
+        <div class="content">
+            <img src="2.jpg" alt="logo" id="logo">
+            <ul>
+            <BR>
+                <li><a href="../about us/about.html" class="one">ABOUT US</a></li>
+                <li><a href="../menu/menu1.html" class="one">MENUS</a></li>
+                <li><a href="../order/order1.html" class="one">ORDER ONLINE</a></li>
+                <li><a href="../reviews/reviews.html" class="one">REVIEWS</a></li>
+                <li><a href="../contact/crushcoffeecontact.html"class="one">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--NAVBAR END-->
+
+    <!--HEADER START-->
+    <div class="container">
+        <div class="head"> CRUSH COFFEE</div>
+        <br>
+        <div class="head2">ORDER ONLINE</div>
+    </div>
+    <!--HEADER END-->
+    <br>
+    <!--ORDER-->
+    <div class="container">
+        <div class="row cell sections">
+            <div class="col-sm col-md-3 col-lg-3 sec1" style="border-left: 7px solid #473024;">Esspresso</div>
+            <div class="col-sm col-md-3 col-lg-3 sec2" style="border-left: 7px solid #473024;">Sandwich</div>
+            <div class="col-sm col-md-3 col-lg-3 sec3" style="border-left: 7px solid #473024;">Sweets</div>
+            <div class="col-sm col-md-3 col-lg-3 sec4" style="border-left: 7px solid #473024;">Cold Drinks</div>
+        </div>
+
+        <br>
+        <!--Espresso starts-->
+        <div class="row esspresso">
+            <div class="card-deck text-center">
+                <div class="card col-sm col-md col-lg-12 cardeco1">
+                    <img class="card-img-top" id="imgsize" src="one.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso <br>₹100/-</h5>
+                        <button class="buttons" onclick="remove('Espresso')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Espresso" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Espresso')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+
+                <div class="card col-sm col-md col-lg-12 cardeco2">
+                    <img class="card-img-top" id="imgsize" src="two.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cafe Mocha <br> ₹150/-</h5>
+                        <button class="buttons" onclick="remove('Mocha')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Mocha" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Mocha')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+
+                <div class="card col-sm col-md col-lg-12 cardeco1">
+                    <img class="card-img-top" id="imgsize" src="three.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cafe Latte <br> ₹120/-</h5>
+                        <button class="buttons" onclick="remove('Latte')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Latte" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Latte')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+
+                <div class="card col-sm col-md col-lg-12 cardeco2">
+                    <img class="card-img-top" id="imgsize" src="for.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino <br> ₹120/-</h5>
+                        <button class="buttons" onclick="remove('Capp')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Capp" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Capp')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card-deck text-center">
+                <div class="card col-sm col-md col-lg-12 cardeco2">
+                    <img class="card-img-top" id="imgsize" src="five.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Americano <br> ₹125/-</h5>
+                        <button class="buttons" onclick="remove('Ameri')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Ameri" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Ameri')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+    
+                <div class="card col-sm col-md col-lg-12 cardeco1">
+                    <img class="card-img-top" id="imgsize" src="six.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mint Chocolate <br> ₹120/-</h5>
+                        <button class="buttons" onclick="remove('Mint')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Mint" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Mint')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+    
+                <div class="card col-sm col-md col-lg-12 cardeco2">
+                    <img class="card-img-top" id="imgsize" src="seven.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vanila Latte <br> ₹125/-</h5>
+                        <button class="buttons" onclick="remove('Vanila')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Vanila" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Vanila')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+    
+                <div class="card col-sm col-md col-lg-12 cardeco1">
+                    <img class="card-img-top" id="imgsize" src="eight.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Caramel Machiaato <br> ₹140/-</h5>
+                        <button class="buttons" onclick="remove('Cara')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Cara" value="0" class="text-center number">
+                        <button class="buttons" onclick="add('Cara')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!--Espresso ends-->
+
+        <br>
+
+        <!--Sandwich start-->
+      
+        <div class="container hide sandwich">
+            <div class="card-deck text-center">
+
+                <div class="card col-sm col-md-4 col-lg-4 cardeco3">
+                    <img class="card-img-top" id="imgsize" src="ten.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Egg and Ham <br> ₹100/-</h5>
+                        <button class="buttons buttons1" onclick="remove('Egg')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Egg" value="0" class="text-center number1">
+                        <button class="buttons buttons1" onclick="add('Egg')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+        
+                <div class="card col-sm col-md-4 col-lg-4 cardeco4">
+                    <img class="card-img-top" id="imgsize" src="eleven.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Omelette <br> ₹45/-</h5>
+                        <button class="buttons buttons2" onclick="remove('Ome')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Ome" value="0" class="text-center number1">
+                        <button class="buttons buttons2" onclick="add('Ome')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+        
+                <div class="card col-sm col-md-4 col-lg-4 cardeco3">
+                    <img class="card-img-top" id="imgsize" src="twelve.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Ham and Cheese <br> ₹90/-</h5>
+                        <button class="buttons buttons1" onclick="remove('Ham')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Ham" value="0" class="text-center number1">
+                        <button class="buttons buttons1" onclick="add('Ham')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+                </div>
+        
+                <br>
+        
+                <div class="card-deck text-center">
+                    <div class="col-sm col-md-2 col-lg-2"></div>
+        
+                    <div class="card col-sm col-md-4 col-lg-4 cardeco4">
+                        <img class="card-img-top" id="imgsize" src="thirteen.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger <br> ₹120/-</h5>
+                            <button class="buttons buttons2" onclick="remove('HamBurg')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="HamBurg" value="0" class="text-center number1">
+                            <button class="buttons buttons2" onclick="add('HamBurg')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+        
+                    <div class="card col-sm col-md-4 col-lg-4 cardeco3">
+                        <img class="card-img-top" id="imgsize" src="fourteen.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheese Burger <br> ₹150/-</h5>
+                            <button class="buttons buttons1" onclick="remove('Cheese')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="Cheese" value="0" class="text-center number1">
+                            <button class="buttons buttons1" onclick="add('Cheese')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm col-md-2 col-lg-2"></div>
+                    </div>
+                </div>
+        </div>
+        
+        <!--Sandwich ends-->
+
+        <br>
+
+        <!--Sweet starts-->
+        
+        <div class="container hide sweets">
+            <div class="row">
+            
+            <div class="card-deck text-center">
+
+                <div class="card col-sm col-md-3 col-lg-3 cardeco5">
+                    <img class="card-img-top" id="imgsize" src="seventeen.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Velvet Cake<br> ₹200/-</h5>
+                        <button class="buttons buttons3" onclick="remove('Red')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Red" value="0" class="text-center number2">
+                        <button class="buttons buttons3" onclick="add('Red')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+            
+                <div class="card col-sm col-md-3 col-lg-3 cardeco6">
+                    <img class="card-img-top" id="imgsize" src="eighteen.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Macaron<br> ₹220/-</h5>
+                        <button class="buttons buttons3" onclick="remove('Maca')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Maca" value="0" class="text-center number2">
+                        <button class="buttons buttons3" onclick="add('Maca')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+        
+                <div class="card col-sm col-md-3 col-lg-3 cardeco5">
+                    <img class="card-img-top" id="imgsize" src="nineteen.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Croissant<br> ₹140/-</h5>
+                        <button class="buttons buttons3" onclick="remove('Cross')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Cross" value="0" class="text-center number2">
+                        <button class="buttons buttons3" onclick="add('Cross')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+        
+                <div class="card col-sm col-md-3 col-lg-3 cardeco6">
+                    <img class="card-img-top" id="imgsize" src="twenty.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese Cake<br> ₹240/-</h5>
+                        <button class="buttons buttons3" onclick="remove('Cake')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Cake" value="0" class="text-center number2">
+                        <button class="buttons buttons3" onclick="add('Cake')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+
+                <br> 
+                <div class="row">
+
+                <div class="card-deck text-center ">
+                    <div class="card col-sm col-md-3 col-lg-3 cardeco6">
+                        <img class="card-img-top" id="imgsize" src="twentyone.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple Pie<br> ₹250/-</h5>
+                            <button class="buttons buttons3" onclick="remove('Apple')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="Apple" value="0" class="text-center number2">
+                            <button class="buttons buttons3" onclick="add('Apple')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+
+                    &nbsp;
+        
+                    <div class="card col-sm col-md-3 col-lg-3 cardeco5">
+                        <img class="card-img-top" id="imgsize" src="twentytwo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Pecan Pie<br> ₹275/-</h5>
+                            <button class="buttons buttons3" onclick="remove('Pecan')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="Pecan" value="0" class="text-center number2">
+                            <button class="buttons buttons3" onclick="add('Pecan')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+
+                    &nbsp;
+        
+                    <div class="card col-sm col-md-3 col-lg-3 cardeco6">
+                        <img class="card-img-top" id="imgsize" src="twentythree.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Cupcake<br> ₹100/-</h5>
+                            <button class="buttons buttons3" onclick="remove('Chocolate')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="Chocolate" value="0" class="text-center number2">
+                            <button class="buttons buttons3" onclick="add('Chocolate')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+
+                    &nbsp;
+        
+                    <div class="card col-sm col-md-3 col-lg-3 cardeco5">
+                        <img class="card-img-top" id="imgsize" src="twentyfour.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Mint Cupcake<br> ₹120/-</h5>
+                            <button class="buttons buttons3" onclick="remove('MCup')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="MCup" value="0" class="text-center number2">
+                            <button class="buttons buttons3" onclick="add('MCup')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+        
+                    </div>
+                </div>
+                
+        </div>
+
+        <!--Sweet ends-->
+
+        <br>
+
+        <!--COLD DRINK START-->
+
+        <div class="container hide cold">
+            <div class="card-deck text-center">
+
+                <div class="card col-sm col-md-4 col-lg-4 cardeco7">
+                    <img class="card-img-top" id="imgsize" src="twentyfive.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Orange Juice <br> ₹80/-</h5>
+                        <button class="buttons buttons4" onclick="remove('Orange')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Orange" value="0" class="text-center number3">
+                        <button class="buttons buttons4" onclick="add('Orange')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+        
+                <div class="card col-sm col-md-4 col-lg-4 cardeco8">
+                    <img class="card-img-top" id="imgsize" src="twentysix.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple Juice <br> ₹70/-</h5>
+                        <button class="buttons buttons4" onclick="remove('AppJ')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="AppJ" value="0" class="text-center number3">
+                        <button class="buttons buttons4" onclick="add('AppJ')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+        
+                <div class="card col-sm col-md-4 col-lg-4 cardeco7">
+                    <img class="card-img-top" id="imgsize" src="twentyseven.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Iced Latte <br> ₹60/-</h5>
+                        <button class="buttons buttons4" onclick="remove('Iced')"> &nbsp; Remove &nbsp; </button> 
+                            <input type="number" id="Iced" value="0" class="text-center number3">
+                        <button class="buttons buttons4" onclick="add('Iced')"> &nbsp; Add &nbsp;</button>
+                    </div>
+                </div>
+                </div>
+        
+                <br>
+        
+                <div class="card-deck text-center">
+                    <div class="col-sm col-md-2 col-lg-2"></div>
+        
+                    <div class="card col-sm col-md-4 col-lg-4 cardeco8">
+                        <img class="card-img-top" id="imgsize" src="twentyeight.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Iced Mocha <br> ₹50/-</h5>
+                            <button class="buttons buttons4" onclick="remove('IcedM')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="IcedM" value="0" class="text-center number3">
+                            <button class="buttons buttons4" onclick="add('IcedM')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+        
+                    <div class="card col-sm col-md-4 col-lg-4 cardeco7">
+                        <img class="card-img-top" id="imgsize" src="twentynine.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Iced Tea <br> ₹40/-</h5>
+                            <button class="buttons buttons4" onclick="remove('IcedT')"> &nbsp; Remove &nbsp; </button> 
+                                <input type="number" id="IcedT" value="0" class="text-center number3">
+                            <button class="buttons buttons4" onclick="add('IcedT')"> &nbsp; Add &nbsp;</button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm col-md-2 col-lg-2"></div>
+                    </div>
+                </div>
+        </div>
+
+        <!--COLD DRINK ENDS-->
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="flexcon">
+            <div><button onclick="totalcost()">TOTAL</button></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flexcon">
+            <div id="totalCost">0</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flexcon">
+            <div> <a href="../proceed/info.html" onclick="totalcost()">PROCEED</a> </div>
+        </div>
+    </div>
+    <!--<div id="totalCost"><button onclick="totalcost()"> TOTAL</button></div> -->
+
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</body>
+</html>
